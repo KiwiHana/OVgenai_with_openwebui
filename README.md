@@ -34,10 +34,11 @@ optimum-cli export openvino --model C:/DeepSeek-R1-Distill-Qwen-1.5B --weight-fo
 # Default address is http://ip:8000/v1
 
 cd C:\Users\Lengda\Documents\ov\openwebui-ov-0516
-python lightweight_serving.py --repo-id-or-model-path C:/AIGC/resources/service/models/llm/Hunyuan-7B-ov --device GPU
+
+python lightweight_serving.py --repo-id-or-model-path C:/models/Hunyuan-7B-ov --device GPU
 
 
-python lightweight_serving.py --repo-id-or-model-path C:/Users/Lengda/Desktop/Hunyuan_models/Hunyuan-7B-Instruct-npu-ov --device NPU
+python lightweight_serving.py --repo-id-or-model-path C:/models/Hunyuan-7B-Instruct-npu-ov --device NPU
 
 
 # If use openwebui, add the OpenAI API http://127.0.0.1:8000/v1 in [Admin Panel->Settings->Connection].
